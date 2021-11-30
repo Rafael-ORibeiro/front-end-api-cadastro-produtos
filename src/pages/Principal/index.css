@@ -1,0 +1,21 @@
+.uli{
+    width: 525px;
+    height: 500px;
+    padding: 0;
+    margin: 3px;
+    overflow-y: scroll;
+    padding:0px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+
+
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    
+}

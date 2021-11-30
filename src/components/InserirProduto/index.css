@@ -1,0 +1,27 @@
+.inserir {
+    width: 520px;
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    justify-content: space-between;
+    margin-top: 2px;
+    background-color: #F0FFFF;
+    
+}
+
+.input {
+    width: 195px;
+    height: 25px;
+    border-radius:5px;
+    font-size: 14px;
+}
+.header{
+    background-color:#B0E0E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+

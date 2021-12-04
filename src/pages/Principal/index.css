@@ -1,6 +1,6 @@
 .uli{
-    width: 525px;
-    height: 500px;
+    max-width: 525px;
+    max-height: 500px;
     padding: 0;
     margin: 3px;
     overflow-y: scroll;
@@ -9,13 +9,30 @@
     display: flex;
     flex-direction: column-reverse;
 
-
 }
 
 body {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    
+    
+}
+
+@media screen and (max-width: 400px){
+
+    .uli{
+      
+
+    
+    }
+
+    body {
+      
+        
+    }
+    
+
     
     
 }

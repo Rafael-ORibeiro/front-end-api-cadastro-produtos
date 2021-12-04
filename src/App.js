@@ -6,7 +6,7 @@ import Principal from './pages/Principal';
 
 function App() {
   return (
-    <div>
+    <div className="larg">
       <Principal/>
     </div>
   );

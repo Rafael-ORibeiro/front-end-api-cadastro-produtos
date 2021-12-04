@@ -1,10 +1,48 @@
+@media(max-width:500px) {
+    .locProduto{
+
+        margin: 0px;
+        width: 100px;
+        
+       
+       
+    
+    }
+
+
+    .ul{
+        
+    }
+
+    .li {
+        width: 348px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        height: 150px;
+      
+    }
+
+    .locBotao {
+        margin: 0px;
+        height: 50px;
+        display: flex;
+
+        
+               
+    }
+
+
+}
+
+
 .ul {
 
     border-top: 1px solid white;
     margin: 0px;
     list-style: none;
     padding-left:10px;
-    width: 500px;
+    max-width: 500px;
     background-color: #E0FFFf;
 
     
@@ -36,6 +74,5 @@
     display: inline-block;
 
 }
-
 
 

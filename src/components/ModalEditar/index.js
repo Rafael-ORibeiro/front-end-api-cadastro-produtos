@@ -1,10 +1,10 @@
-import { render } from "@testing-library/react";
+
 import React,{useState} from "react";
 import Button from "../Button";
 import Input from "../Input";
 import './index.css'
 import axios from "axios";
-import Principal from "../../pages/Principal";
+
 
 
 
@@ -15,11 +15,12 @@ export default function ModalEditar(props) {
   const [nomeProduto, setNomeProduto] = useState(props.nome);
   const [valorQuantidade, setValorQuantidade] = useState(props.quantProduto);
   const nomeAntigo = props.nome
+  const quantidadeAntiga = props.quantProduto
 
   const urlEdi = `https://crud-produtos-unifaa.herokuapp.com/produtos/update`
 
    let editar = async() =>{
-       let res = await axios.put(urlEdi,[{ "antigoNome":nomeAntigo,"novoNome":nomeProduto,"novaQuantidade": valorQuantidade}])
+       let res = await axios.put(urlEdi,[{ "antigoNome":nomeAntigo,"novoNome":nomeProduto,"novaQuantidade": valorQuantidade,"antigaQuantidade":quantidadeAntiga}])
        alert(res.data['message'])
        props.fechar()
        props.callback()
